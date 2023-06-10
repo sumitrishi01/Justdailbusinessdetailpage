@@ -1,0 +1,2113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Justdail_Bussiness_Detail_Page</title>
+        <link rel="icon" href="./img/fevicon.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <!-- Modal start-->
+        <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">                    
+                    <div class="modal-body p-0">
+                        <!--Login page Modal start-->
+                        <div>
+                            <button class="btn end-0 top-0 bg-secondary bg-opacity-50 rounded-pill mt-3 me-3 text position-absolute py-1" data-bs-dismiss="modal" style="color:#ffff;font-size:15px;padding:5px 12px;font-family:'Calibri';" >Skip</button>                            
+                            <img class="img-fluid w-100" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/login_banner_28mar.png"/>
+                            
+                            <form class="bg-white p-4 text-center rounded-top-5 position-relative" style="margin-top:-8%;">
+                                <h5>India's # 1 Local Search Engine</h5>                                
+                                <div class="my-4">                                  
+                                    <div class="input-group">
+                                        <div class="input-group-text fw-bold">+91</div>
+                                        <input type="text" class="form-control form-control-lg s_input fw-semibold" id="autoSizingInputGroup" placeholder="Mobile Number">
+                                    </div>
+                                </div>                               
+                                <button type="submit" class="btn btn-lg w-100 btn-primary s_input fw-semibold" disabled>Login with OTP</button>
+                                <p class="my-3 fw-semibold text-secondary-emphasis" style="font-size:14px;">------------ or continue with ------------</p>
+                                <button type="submit" class="btn text-dark w-100 border border-1 s_input fw-semibold">
+                                    <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/truecaller-svg.svg"/>
+                                    TrueCaller
+                                </button>
+                            </form>
+                        </div>
+                        <!--Login page Modal End-->
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Modal End-->
+        <!--Login Button Modal Section start-->
+        <div class="modal hide" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="backdrop-filter: blur(15px);">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-2 rounded-4">
+                <div class="modal-header border-bottom-0 mb-0 pb-0">
+                <div class="row w-100 m-0">
+                    <div class="col-3 border-end my-auto py-1">
+                        <img class="img-fluid" src="./img/jdlogosvg.svg" width="90px">
+                    </div>
+                    <div class="col-8 lh-base">
+                        <h5 style="margin-top:20px; font-weight:900;">Welcome</h4>
+                        <p class="text-dark-emphasis pt-1">Login for a seamless experience</p>
+                    </div>
+                    <div class="col-1 d-flex align-items-end mb-5 pb-3">
+                        <button type="button" class="btn-close btn shadow-none btn-light rounded-circle px-3 text-dark" data-bs-dismiss="modal" aria-label="Close"></button>                        
+                    </div>
+                </div>
+                </div>
+                <div class="modal-body">                  
+                    <form class="bg-white text-center">
+                        <div class="mb-3 px-3">                                  
+                            <div class="input-group border border-0 border-bottom pb-1">
+                                <div class="input-group-text fw-bold rounded-0 border border-0 bg-transparent">+91</div>
+                                <input type="number" class="form-control form-control-sm s_input fw-semibold rounded-0 border border-0 border-start shadow-none" id="autoSizingInputGroup" placeholder="Mobile Number">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary s_input rounded-3 fw-semibold my-4" style="width: 60%;" disabled>Login with OTP</button><br>
+                        <div class="d-grid gap my-4">
+                            <div class="s_line">
+                                <span class="my-3 fw-semibold text-black-50 pt-1 pb-1 fs-11">
+                                    Maybe Later
+                                </span>
+                            </div>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--Login Button Modal Section End-->
+        <div class="container bg-white">
+            <!-- Header Section start -->
+            <header class="d-none d-sm-block d-md-none d-lg-block">
+                <!-- Top head section start -->
+                <div class="row h-100">
+                    <div class="col-2 my-auto">
+                        <img class="img-fluid px-2" src="./img/jdlogosvg.svg" width="105px"/>
+                    </div>
+                    <div class="col-6 my-auto" style="margin-left: -4%;">
+                        <div class="row">
+                            <div class="col-4 px-0 mx-3 d-flex border border-1 border-dark-subtle rounded-1 shadow-sm bg-secondary-subtle">
+                                <button type="button" class="btn border-0 rounded-1 py-1">
+                                    <i class="fa-solid fa-location-dot" style="color: #898a8c;"></i>
+                                </button>
+                                <input type="search" class="form-control form-control-sm rounded-5 px-0 bg-secondary-subtle shadow-none border-0" placeholder="Search Loaction" id="exampleInput">  
+                            </div>
+                            <div class="col-7 p-0">
+                                <form>                            
+                                    <div class="d-flex bg-white border border-1 border-dark-subtle rounded-1 shadow-sm">                              
+                                        <input type="search" placeholder="Search for Spas & Salons" class="form-control form-control-sm border border-0 shadow-none px-2 rounded-5">
+                                        <button type="button" class="btn border-0 rounded-0 p-0">
+                                            <img class="img-fluid" src="./img/mic.svg"/>
+                                        </button>
+                                        <button type="button" class="btn btn-sm border-0 rounded-1 s_searchicon">
+                                            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                                        </button>                                          
+                                    </div>                                                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- navbar section start -->
+                    <div class="col-4 my-auto ms-4">
+                        <ul class="nav float-end">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-1 py-0 active text-dark" aria-current="page" href="#">
+                                    <img class="img-fluid" src="./img/nav_advertise_icon.svg" width="17px"/>
+                                    Advertise
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1 position-relative">
+                                <a class="nav-link px-1 py-0 text-dark" href="#">
+                                    <img class="img-fluid" src="./img/nav_listing_icon.svg" width="17px"/>
+                                    Free Listing
+                                </a>
+                                <a href="#" class="s_busi text-decoration-none">
+                                BUSSINESS
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-0 py-0 text-dark" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <img class="img-fluid" src="./img/notify_icon.svg" width="23px"/>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a href="" class="nav-link text-dark px-1 py-0" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <img class="img-fluid p-0" src="./img/jd_login_icon.svg" width="27px"/>
+                                    Login / Sign Up
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- navbar section end -->
+                </div>
+                <!-- Top head section end -->
+                <!-- Dropdown section start -->
+                <div class="row bg-white mb-0 border-bottom border-dark-subtle">
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:71px;margin:-8% 0 0 87%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                            JD Xperts
+                            <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-45%;width:600%;">
+                            <li>
+                                <div class="d-flex">
+                                    <div style="padding: 0 5% 0 1%;">
+                                        <h6 class="ps-3 fw-bold text-dark-emphasis" style="font-size:10px;">APELIANCES REPAIR</h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-ac.svg"> Air Conditioner
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-tv.svg"> Television
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-refrigerator.svg"> Refrigerator
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-hmkitchen.svg"> Washing Machine
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-waterpurify.svg"> R0/Water Purifier
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-chimney.svg"> Chimney
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-microwave.svg"> Microwave
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-light-subtle border-start"></span>
+                                    <div style="padding: 0 5% 0 1%;">
+                                        <h6 class="ps-3" style="font-size:10px;">PEST CONTROL</h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-coackroach.svg"> Cockroach & Ant
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-termite.svg"> Termites
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-bedbugs.svg"> Bedbugs
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-mosquitoes.svg"> Mosquitoes
+                                                </a>
+                                            </li>                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>                          
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:36px;margin:-8% 0 0 23%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                            B2B
+                            <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-80%;width:605%;">
+                                <div>
+                                    <li>
+                                        <a class="dropdown-item bg-white" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-allcat.svg"> All Categories
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-healthmedical.svg"> Health Medical
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-electricaltools.svg"> Electrical Supplies
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-industrial.svg"> Industrial Machinery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-apparel.svg"> Apparel & Fashion
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu-carbikes.svg"> Automobile & Accessories
+                                        </a>
+                                    </li>                                
+                                </div>
+                            </ul>
+                        </div>
+                    </div>                     
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:80px;margin:-8% 0 0 -55%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                            Real Estate
+                            <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-40%;width:280%;">
+                                <div>
+                                    <li>
+                                        <a class="dropdown-item bg-white" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estatebuy.svg"> Buy Property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estaterent.svg"> Rent Property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estateproject.svg"> Sell Property
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_projects.svg"> Projects
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <img class="img-fluid me-1" alt="pic" src="./img/icons/sbmenu_estatepg.svg"> PG Accomodation
+                                        </a>
+                                    </li>                                                              
+                                </div>
+                            </ul>
+                        </div>
+                    </div>                     
+                    <div class="col-2 mb-0 mt-3">
+                        <div class="dropdown dropicon s_drop1" style="width:130px;margin:-8% 0 0 -115%;">                        
+                            <button class="btn text-dark-emphasis border-0 mb-3 px-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:12px;">
+                                Popular Categories
+                            <img class="img-fluid text-dark-emphasis " src="./img/down_arrow3.svg"/>
+                            </button>                        
+                            <ul class="dropdown-menu downicon rounded-top-0" style="margin-left:-100%;width:340%;">
+                                <li>
+                                <div class="d-flex">
+                                    <div style="padding: 0 8% 0 1%;">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Body Massage Centers
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Packers & Movers
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Car Hire
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Beauty Parlours
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Civil Contractors
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Security System
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Pathology Labs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Interior Designer
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Furniture Repair Services
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Coaching
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <span class="border-light-subtle border-start"></span>
+                                    <div style="padding: 0 5% 0 1%;">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Vocational training
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Lawyers
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Hotels
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item pe-3" href="#">
+                                                    Computer Training Institutes
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    House Keeping Services
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Car Repairs & Services
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Transporters
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Photographers
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Hobbies
+                                                </a>
+                                            </li>                                        
+                                            <li>
+                                                <a class="dropdown-item text-primary" href="#">
+                                                    More...
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </li>                          
+                            </ul>
+                        </div>
+                    </div>                     
+                </div>
+                <!-- Dropdown section end -->
+            </header>
+            <!-- Header Section End -->
+            <!-- Large screen main section start -->
+            <main class="d-none d-sm-block d-md-none d-lg-block s_smalltext" style="margin-top:4.2%;">
+                <p class="fs-10 s_text">
+                    <a href="#" >Malappuram</a> <i class="fa-solid fa-chevron-right" style="color: #757677;"></i> <a href="#">Hotels In Malappuram</a> <i class="fa-solid fa-chevron-right" style="color: #757677;"></i> <a href="#">Hotels In Angadipuram</a> <i class="fa-solid fa-chevron-right" style="color: #757677;"></i> <a href="#">Sreelakam Home Thattakam</a>
+                </p> 
+                <div class="border rounded-4">
+                    <div class="row m-0" style="height:252px;">
+                        <div class="col-4 p-0 border-end">
+                            <img alt="pic" class="img-fluid s_imge" style="border-top-left-radius:15px;" src="./img/sreelakam-home-thattakam-malappuram-1swffncnft.avif">
+                        </div>
+                        <div class="col-4 p-0 border-end">
+                            <img alt="pic" class="img-fluid s_imge" src="./img/sreelakam-home-thattakam-angadipuram-malappuram-hotels-jjg4pzca4m.avif">
+                        </div>
+                        <div class="col-4">
+                            <div class="row s_imgee">
+                                <div class="col-6 p-0 border-bottom">
+                                    <img alt="pic" class="img-fluid" src="./img/sreelakam-home-thattakam-malappuram-1swffncnft.avif">
+                                </div>
+                                <div class="col-6 p-0 border-start border-bottom">
+                                    <img alt="pic" class="img-fluid" style="border-top-right-radius:15px;" src="./img/sreelakam-home-thattakam-angadipuram-malappuram-hotels-y6lyo48.avif">
+                                </div>
+                                <div class="col-6 p-0">
+                                    <img alt="pic" class="img-fluid" src="./img/sreelakam-home-thattakam-angadipuram-malappuram-hotels-jjg4pzca4m.avif">
+                                </div>
+                                <div class="col-6 p-0 border-start">
+                                    <img alt="pic" class="img-fluid" src="./img/sreelakam-home-thattakam-angadipuram-malappuram-hotels-jjg4pzca4m.avif">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-0 pb-4">
+                        <div>
+                            <div class="ms-1">
+                                <img alt="pic" width="19px" class="mb-1" src="./img/icons/new_thumb_icon.svg">&nbsp;
+                                <span class="fw-bold" style="font-size:23px;">Sreelakam Home Thattakam</span>
+                                <div class="float-end mt-1 me-2">
+                                    <a href="#" class="btn btn-sm fs-12 border-dark-subtle py-0 px-1 bg-secondary-subtle">Hotels</a>
+                                    <a href="#" class="btn btn-sm fs-12 border-dark-subtle py-0 px-1 bg-secondary-subtle">Lodging Services</a>
+                                </div>
+                            </div>
+                            <div class="ms-1">
+                                <span class="p-2 py-0 rounded-2 text-light fw-semibold" style="background-color: rgb(2, 129, 23);">4.3</span>
+                                <span>
+                                    <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                    <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                                </span>
+                                <span class="fs-14 text-body-tertiary fw-semibold">70 Ratings</span>
+                                <img alt="pic" class="img-fluid ms-2" width="60px" src="./img/icons/verified_2x.gif">
+                                <img alt="pic" class="img-fluid" src="./img/icons/claimed_icon.svg"><span class="fs-14 fw-semibold"> Claimed</span>
+                                <div class="d-flex fs-14">
+                                    <span>Angadipuram, Malappuram</span> <li class="text-body-tertiary ms-3">7 Yrs in Business</li>
+                                </div>
+                            </div>
+                            <img alt="pic" class="img-fluid ms-1" src="./img/icons/enquired_chart.svg"> <span class="fs-14"> <b>346</b> people recently enquired</span>
+                            <div class="mt-1 s_sreeicon">
+                                <a href="#" class="btn btn-sm ms-1 px-2 text-light" style="background-color: rgb(2, 129, 23);">
+                                    <img alt="pic" class="img-fluid" src="./img/icons/call_white_icon.svg" width="15px">
+                                    <b class="px-1">1234567891</b>
+                                </a> 
+                                <a href="#" class="btn  btn-sm ms-2 border-dark-subtle text-dark">
+                                    <img alt="pic" class="img-fluid" src="./img/icons/whatsapp_logo.png" style="height:21px;">
+                                    <span class="fs-15 fw-bold">Chat</span>
+                                </a>
+                                <a href="#" class="btn btn-sm ms-2 border-dark-subtle text-dark">
+                                    <img alt="pic" class="img-fluid" src="./img/icons/det-writewr.svg" style="height:21px;">
+                                            <span class="fs-15 fw-bold">Tap to Rate</span>
+                                </a>
+                                <a href="#" class="btn btn-sm ms-2 border-dark-subtle text-dark">
+                                    <img alt="pic" class="img-fluid" src="./img/icons/det-share2.svg" style="height:21px;">
+                                            <span class="fs-15 fw-bold">Share</span>
+                                </a>
+                                <a href="#" class="btn btn-sm ms-2 border-dark-subtle text-dark">
+                                    <img alt="pic" class="img-fluid" src="./img/icons/vend_favourite_icon.svg" style="height:21px;">
+                                </a>
+                                <a href="#" class="btn border-primary fw-bold py-1 ps-5 pe-5 float-end text-light bg-primary me-2" style="width:20%;">Enquire Now</a>                            
+                            </div>
+                        </div>                    
+                    </div>
+                </div>   
+                <div class="row mt-4 pb-3 border-bottom">
+                    <div class="col-9">
+                        <div class="border rounded-3">
+                            <div class="p-4 border-bottom">
+                                <h6 class="fw-bold fs-14">Amenities</h6>
+                                <img alt="pic" class="img-fluid" src="./img/icons/det-tick.svg" width="18px"> &nbsp;<span class="fw-semibold fs-14">Members Only</span>
+                            </div> 
+                            <div class="p-4 border-bottom">
+                                <h6 class="fw-bold fs-18 mb-3">Quick Information</h6>
+                                <div class="text-black-50 fw-semibold fs-15" style="width:68%;">
+                                    <span>Mode of Payment</span>
+                                    <span class="float-end">Year of Establishment</span>
+                                </div>
+                                <div class="text-black fw-semibold fs-15" style="width:55.5%;">
+                                    <span>Cash, Debit Cards, Cheques, Credit Card</span>
+                                    <span class="float-end">2016</span>
+                                </div>
+                            </div>
+                            <div class="row p-4">
+                                <h4 class="fw-bold">Photos</h4>
+                                <div class="col-3">
+                                    <a href="javascript:void()" class="text-decoration-none">
+                                        <figure>
+                                            <img src="./img/sreelakam-home-thattakam-angadipuram-malappuram-hotels-jjg4pzca4m.avif" alt="picture" title="picture" class="img-fluid rounded">
+                                            <figcaption class="text-dark fw-bold mt-2">All</figcaption>
+                                            <figcaption class="fs-12 text-dark-emphasis">39 Photos</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="javascript:void()" class="text-decoration-none">
+                                        <figure>
+                                            <img src="./img/sreelakam-home-thattakam-malappuram-1swffncnft.avif" alt="picture" title="picture" class="img-fluid rounded">
+                                            <figcaption class="text-dark fw-bold mt-2">Exterior</figcaption>
+                                            <figcaption class="fs-12 text-dark-emphasis">17 Photos</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="javascript:void()" class="text-decoration-none">
+                                        <figure>
+                                            <img src="https://images.jdmagicbox.com/comp/malappuram/z4/9999px483.x483.160527140455.i8z4/catalogue/sreelakam-home-thattakam-malappuram-9gfja.jpg?temp=1" alt="picture" title="picture" class="img-fluid rounded">
+                                            <figcaption class="text-dark fw-bold mt-2">Rooms</figcaption>
+                                            <figcaption class="fs-12 text-dark-emphasis">4 Photos</figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-3">
+                                    <!-- <a href="javascript:void()">
+                                        <figure>
+                                            <img src="https://images.jdmagicbox.com/comp/malappuram/z4/9999px483.x483.160527140455.i8z4/catalogue/sreelakam-home-thattakam-malappuram-9gfja.jpg?temp=1" alt="picture" title="picture" class="img-fluid">
+                                            <figcaption>Picture</figcaption>
+                                        </figure>
+                                    </a> -->
+                                </div>
+                            </div>
+                            <div class="btn btn-primary fs-14 mb-4 px-4 ms-3">
+                                <img alt="pic" class="img-fluid" src="./img/icons/web_upload_icon.svg">
+                                <span class="fs-18">Add Photo</span>
+                            </div>
+                            <div class="p-4 border-bottom border-top">
+                                <h6 class="fs-18 fw-bold">Question & Answers</h6>   
+                                <p class="fs-14 text-secondary">Would you like to ask a question?</p>    
+                                <a href="#" class="btn btn-outline-primary text-primary px-4 fw-bold rounded-1 s_readallreview">
+                                    <span>Post your Question</span>
+                                </a>                     
+                            </div>
+                            <div class="p-4  border-bottom ">
+                                <a href="#" class="text-black text-decoration-none"><h6 class="fs-18 fw-bold">Reviews & Ratings</h6></a>
+                                <div class="d-flex mt-4">
+                                    <div class="d-flex border-end pe-2 py-3">
+                                        <div class="mt-2 ms-0">
+                                            <span class="text-light fw-bold fs-2 rounded-4" style="background-color: rgb(2, 129, 23); padding:10px;">4.3</span>
+                                        </div>    
+                                        <div class="ms-3 pe-5">
+                                            <span class="fs-5 fw-bold">70 Ratings</span>
+                                            <p class="fs-14 text-secondary">Jd rating index based on 70 ratings across the web</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <h6 class="fw-semibold fs-15 ms-5">Start your Review</h6>
+                                        <a href="#" class="row s_hoverstar ms-4 ps-2 mt-3">
+                                            <div class="col">
+                                                <div class="border px-1 rounded fs-5">
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="border px-1 rounded fs-5">
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="border px-1 rounded fs-5">
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="border px-1 rounded fs-5">
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="border px-1 rounded fs-5">
+                                                    <i class="fa-regular fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>                                                           
+                                </div>
+                                <div>
+                                    <h6 class="fw-semibold fs-18">Recent rating trend</h6>
+                                    <div class="row mt-4 s_5star">
+                                        <div class="col text-center">
+                                            <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center px-0">
+                                        <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center">
+                                        <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center px-0">
+                                        <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center">
+                                        <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center px-0">
+                                        <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center">
+                                        <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center px-0">
+                                        <div class="border rounded-pill ps-0">
+                                            5.0  <i class="fa-solid fa-star fa-sm bg-orange"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col text-center"></div>
+                                        <div class="col text-center"></div>                                    
+                                    </div>
+                                    <h6 class="fw-semibold fs-18 my-4">User Reviews</h6>
+                                    <div class="d-flex">
+                                        <div class="my-auto">
+                                            <a href="#" class="btn border-0 btn-sm border fs-12 my-1 text-primary bg-primary-subtle border-primary-subtle p-12">Relevant</a>
+                                            <a href="#" class="btn border-0 btn-sm border fs-12 my-1 bg-secondary-subtle p-12 fw-semibold">Friends Ratings</a>
+                                            <a href="#" class="btn border-0 btn-sm border fs-12 my-1 p-12 bg-body-secondary fw-semibold">Latest</a>
+                                            <a href="#" class="btn border-0 btn-sm border fs-12 my-1 bg-body-secondary p-12 fw-semibold">High to Low</a>
+                                        </div>
+                                        <div style="margin-left:23%;">
+                                            <form class="d-flex border p-1 rounded-1">
+                                                <button type="submit" class="btn border-0 text-primary py-0 shadow-none rounded-0 border-0"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                <div>                                              
+                                                <input type="email" class="form-control shadow-none rounded-0 border-0 pe-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search reviews">
+                                                </div>                                            
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex mt-4">
+                                        <div class="d-flex">
+                                            <a href="#">
+                                                <img alt="pic" class="img-fluid" width="45px" src="./img/profileImg">
+                                            </a>
+                                            <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                                                <span class="fw-semibold">Sudheesh</span>
+                                                <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                                            </a>
+                                        </div>
+                                        <div class="float-end ms-auto s_threedot">
+                                            <span class="fs-12">28 Oct 2019</span> <a href="#" class="btn rounded-circle py-1 text-dark"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                                        </span>
+                                        <p class="fs-12 mt-3">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                                        <a href="#" class="btn">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_helpful_icon.svg">
+                                            <span class="fw-semibold fs-14">Helpful</span>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_comment_icon.svg">
+                                            <span class="fw-semibold fs-14">Comment</span>
+                                        </a>
+                                        <a href="#" class="btn">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-share2.svg">
+                                            <span class="fw-semibold fs-14">Share</span>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex mt-4">
+                                        <div class="d-flex">
+                                            <a href="#">
+                                                <img alt="pic" class="img-fluid" width="45px" src="./img/profileImg">
+                                            </a>
+                                            <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                                                <span class="fw-semibold">Sudheesh</span>
+                                                <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                                            </a>
+                                        </div>
+                                        <div class="float-end ms-auto s_threedot">
+                                            <span class="fs-12">28 Oct 2019</span> <a href="#" class="btn rounded-circle py-1 text-dark"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                                        </span>
+                                        <p class="fs-12 mt-3">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_helpful_icon.svg">
+                                            <span class="fw-semibold fs-14">Helpful</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_comment_icon.svg">
+                                            <span class="fw-semibold fs-14">Comment</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-share2.svg">
+                                            <span class="fw-semibold fs-14">Share</span>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex mt-4">
+                                        <div class="d-flex">
+                                            <a href="#">
+                                                <img alt="pic" class="img-fluid" width="45px" src="./img/profileImg">
+                                            </a>
+                                            <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                                                <span class="fw-semibold">Sudheesh</span>
+                                                <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                                            </a>
+                                        </div>
+                                        <div class="float-end ms-auto s_threedot">
+                                            <span class="fs-12">28 Oct 2019</span> <a href="#" class="btn rounded-circle py-1 text-dark"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                                        </span>
+                                        <p class="fs-12 mt-3">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_helpful_icon.svg">
+                                            <span class="fw-semibold fs-14">Helpful</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_comment_icon.svg">
+                                            <span class="fw-semibold fs-14">Comment</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-share2.svg">
+                                            <span class="fw-semibold fs-14">Share</span>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex mt-4">
+                                        <div class="d-flex">
+                                            <a href="#">
+                                                <img alt="pic" class="img-fluid" width="45px" src="./img/profileImg">
+                                            </a>
+                                            <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                                                <span class="fw-semibold">Sudheesh</span>
+                                                <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                                            </a>
+                                        </div>
+                                        <div class="float-end ms-auto s_threedot">
+                                            <span class="fs-12">28 Oct 2019</span> <a href="#" class="btn rounded-circle py-1 text-dark"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                                        </span>
+                                        <p class="fs-12 mt-3">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_helpful_icon.svg">
+                                            <span class="fw-semibold fs-14">Helpful</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_comment_icon.svg">
+                                            <span class="fw-semibold fs-14">Comment</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-share2.svg">
+                                            <span class="fw-semibold fs-14">Share</span>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex mt-4">
+                                        <div class="d-flex">
+                                            <a href="#">
+                                                <img alt="pic" class="img-fluid" width="45px" src="./img/profileImg">
+                                            </a>
+                                            <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                                                <span class="fw-semibold">Sudheesh</span>
+                                                <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                                            </a>
+                                        </div>
+                                        <div class="float-end ms-auto s_threedot">
+                                            <span class="fs-12">28 Oct 2019</span> <a href="#" class="btn rounded-circle py-1 text-dark"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                                        </span>
+                                        <p class="fs-12 mt-3">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_helpful_icon.svg">
+                                            <span class="fw-semibold fs-14">Helpful</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_comment_icon.svg">
+                                            <span class="fw-semibold fs-14">Comment</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-share2.svg">
+                                            <span class="fw-semibold fs-14">Share</span>
+                                        </a>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex mt-4">
+                                        <div class="d-flex">
+                                            <a href="#">
+                                                <img alt="pic" class="img-fluid" width="45px" src="./img/profileImg">
+                                            </a>
+                                            <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                                                <span class="fw-semibold">Sudheesh</span>
+                                                <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                                            </a>
+                                        </div>
+                                        <div class="float-end ms-auto s_threedot">
+                                            <span class="fs-12">28 Oct 2019</span> <a href="#" class="btn rounded-circle py-1 text-dark"><i class="fa-solid fa-ellipsis-vertical fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                            <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                                        </span>
+                                        <p class="fs-12 mt-3">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_helpful_icon.svg">
+                                            <span class="fw-semibold fs-14">Helpful</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/black_comment_icon.svg">
+                                            <span class="fw-semibold fs-14">Comment</span>
+                                        </a>
+                                        <a href="#" class="btn border-0">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-share2.svg">
+                                            <span class="fw-semibold fs-14">Share</span>
+                                        </a>
+                                    </div>
+                                    <div class="text-center mt-5  mb-3">
+                                        <a href="#" class="btn s_readallreview btn-outline-primary px-4">
+                                            <span class="px-3 fw-semibold text-primary">Read all reviews</span>
+                                        </a>
+                                    </div>                                
+                                </div>
+                            </div>
+                            <div class="p-4 border-bottom ">
+                                <h6 class="fw-bold fs-18">People found Sreelakam Home Thattakam by searching for</h6>
+                                <div class="my-3">
+                                    <a href="#" class="btn btn-sm rounded-4 bg-secondary-subtle text-dark fw-semibold">Hotels</a>
+                                    <a href="#" class="btn btn-sm rounded-4 bg-secondary-subtle text-dark fw-semibold mx-2">Lodging Services</a>
+                                    <a href="#" class="btn btn-sm rounded-4 bg-secondary-subtle text-dark fw-semibold">AC Lodging Services</a>
+                                </div>
+                            </div>
+                            <div class="p-4 border-bottom ">
+                                <h6 class="fs-18 fw-bold">Most Searched</h6>                            
+                                <div class="fs-11 mt-3 s_mostsearch">
+                                    <a href="#">Rooms On Rent</a> <span>|</span>
+                                    <a href="#">Apartments Hotels</a> <span>|</span>
+                                    <a href="#">Couple Friendly Hotels</a> <span>|</span>
+                                    <a href="#">Apartment Hotels(Rs 1001 To Rs 2000)</a> <span>|</span>
+                                    <a href="#">luxuary Hotels</a> <span>|</span>
+                                    <a href="#">Apartment Hotels (Rs 2001 To 3000)</a> <span>|</span>
+                                    <a href="#">Eco Friendly Hotels</a> <span>|</span>
+                                    <a href="#">Early Check In Hotels</a> <span>|</span>
+                                    <a href="#">Hotels Near International Airport</a> <span>|</span>
+                                    <a href="#">Pet Friendly Hotels</a> <span>|</span>
+                                    <a href="#">Motels</a> <span>|</span>
+                                    <a href="#">Apartments Hotels For Women</a> <span>|</span>
+                                    <a href="#">Apartments Hotels For Men</a> <span>|</span>
+                                    <a href="#">Apartment Hotels (Rs 3001 To Rs 4000)</a> <span>|</span>
+                                    <a href="#">Hotels With Kitchen</a> <span>|</span>
+                                    <a href="#">Airport Transit Hotels</a> <span>|</span>
+                                    <a href="#">Business Hotels</a> <span>|</span>
+                                    <a href="#">Hotels With Jacuzzi Facility</a> <span>|</span>
+                                    <a href="#">Hotels With Swimming Pool</a> <span>|</span>
+                                    <a href="#">Hotels Serving Buffet</a>
+                                </div>
+                            </div>
+                            <div class="p-4 border-bottom ">
+                                <h6 class="fw-bold fs-18">About us</h6>
+                                <h6 class="fw-bold fs-14">Sreelakam Home Thattakam in Angadipuram, Malappuram</h6>
+                                <p class="fs-12">Sreelakam Home Thattakam listed under Hotels in Angadipuram, Malappuram. Check Address, Contact Number, Ratings & Reviews, Photos, Maps
+                                    etc, on Justdial</p>
+                                <h6 class="fw-bold fs-14">Loaction and overview</h6>   
+                                <p class="fs-12">Sreelakam Home Thattakam in Angadipuram, Malappuram is a reliable name in the industry as they aim to deliver the best experience to their customers. This has helped them build up a loyal customer base. They started their journey in 2016 and ever since, they have ensured that the customer remains at the centre of their business operations and philosophy. As they are located in a favourable neighbourhood, exactly at Thekkenada, Near Thirumandhamkunnu Temple, Angadipuram-679321 near Thirumandhamkunnu Temple, it is easy to locate Sreelakam Home Thattakam on the map. For any kind of assistance or questions, it is best to contact them directly during their business hours.</p>
+                                <h6 class="fw-bold fs-14">Products or Services offered:</h6>
+                                <p class="fs-12">Also listed in Hotels, Lodging Services, AC Lodging Services, Lodging Services (Rs 1001 To Rs 2000) etc. Sreelakam Home Thattakam in Angadipuram is one of the most trustworthy names in the field. They have received a 4.2 rating from their customers. Their service/product range includes 24 Hour Check In Available, Room Typeentire Apartment,room, Ac Rooms Available, 24 Hours Check In, Air Conditioned Hot Water, Parking Available, Laundry Service, Help Desk, Dining Hall, Couple Friendlyyes, etc, all available at competitive prices. To moke the transactional experience hassle-free for customers, they accept multiple modes of payment such as Cash, Debit Cards Cheques, Credit Card. The best time to contact them is anytime
+                                    between Open 24 Hrs - Open 24 Hrs.</p>
+                                <p class="fs-12">Kindly scroll up to check the detailed address and contact number of Sreelakam Home Thattakam in Malappuram.</p>
+                            </div>
+                            <div class="p-4 pb-1">
+                                <h6 class="fw-bold fs-18 mb-4">Frequently Asked Question</h6>
+                                <span class="fw-bold fs-13">1. Can I amend my booking at Sreelakam Home Thattakam?</span>
+                                <p class="fs-12">Sreelakam Home Thattakam has its own policy regarding booking amendment. If you have booked a stay at the hotel, we recommend getting in touch with the reservation to check if any amendment is possible or not.</p>
+                                <spna class="fw-bold fs-13">2. What are some of the facilities offered by Sreelakam Home Thattakam?</spna>
+                                <p class="fs-12">You can get toiletries, towels, drinking water and a welcome drink as complimentary service at every hotel.</p>
+                                <spna class="fw-bold fs-13">3. Can I request room service during my stay in Sreelakam Home Thattakam?</spna>
+                                <p class="fs-12">Yes, Sreelakam Home Thattakam provides free room service to maintain cleanliness and hygienic conditions.</p>
+                                <spna class="fs-13 fw-bold">4. Is there a dine-in area at Sreelakam Home Thattakam?</spna>
+                                <p class="fs-12">Sreelakam Home Thattakam has a dine-in area so that guests can enjoy the meals while staying at the hotel.</p>
+                                <spna class="fw-bold fs-13">5. Is Sreelakam Home Thattakam a safe place to stay for families?</spna>
+                                <p class="fs-12">Sreelakam Home Thattakam is one of the recommended Hotels that offers the best service to the guests. It has essential facilities so that you enjoy a comfortable stay.</p>
+                                <spna class="fw-bold fs-13">6. Do I need any documents during check-in time?</spna>
+                                <p class="fs-12">Guests need to provide a copy of any identity proof while checking in. This is done to have a record and make the place safe for all guests.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="p-3 border rounded-3">
+                            <h6 class="fs-17 fw-bold">Check Availability</h6>
+                            <div class="mt-4 mb-3">
+                                <span class="fs-14 text-secondary">Check in</span>
+                                <span class="fs-14 text-secondary mx-4 px-1">Check Out</span>
+                                <span class="fs-14 text-secondary">Guests</span>
+                            </div>
+                            <div class="d-flex justify-content-between s_iconone">
+                                <span class="fs-13 fw-bold border-bottom">9 Jun</span>
+                                <span class="fs-13 fw-bold border-bottom  mx-3">10 Jun</span>
+                                <span class="fs-13 fw-bold border-bottom"><a href="#" class="text-decoration-none text-dark">2 ADULTS <img alt="pic" class="img-fluid" src="./img/down_arrow3.svg"></a></span>
+                            </div>
+                        </div>
+                        <div class="p-3 pb-0 mt-3 border rounded-3">
+                            <h6 class="fs-17 fw-bold">Address</h6>
+                            <span class="fs-14">
+                                Thekkenada, Angadipuram,<br>
+                                Malappuram - 679321 (Near<br>
+                                Thirumandhamkunnu Temple)
+                            </span>
+                            <div>
+                                <a href="#" class="btn border-0 btn-sm px-0">
+                                    <img alt="pic" class="img-fluid" src="./img/icons/directions_icon.svg">
+                                    <span class="fs-13 ms-2 text-primary">Get Directions</span>
+                                </a>
+                                <a href="#" class="btn border-0 btn-sm px-0 ms-5">
+                                    <img alt="pic" class="img-fluid" src="./img/icons/copy_icon_blue.svg">
+                                    <span class="fs-13 ms-2">Copy</span>
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="list-unstyled mt-2 s_addulli">
+                                    <li class="border-top border-bottom py-11">
+                                        <a href="#" class="text-decoration-none">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det_enquiry_icon_blue.svg">&nbsp;&nbsp;
+                                            <span class="text-dark fs-15">Send Enquiry by Email</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-11">
+                                        <a href="#" class="text-decoration-none">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/new_smsemail_icon_blue.svg">&nbsp;&nbsp;
+                                            <span class="text-dark fs-15">Get info via SMS/Email</span>
+                                        </a>
+                                    </li>
+                                    <li class="border-top border-bottom py-11">
+                                        <a href="#" class="text-decoration-none">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-share2_blue.svg">&nbsp;&nbsp;
+                                            <span class="text-dark fs-15">Share this</span>
+                                        </a>
+                                    </li>
+                                    <li class="py-11">
+                                        <a href="#" class="text-decoration-none">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-ratethis_blue.svg">&nbsp;&nbsp;
+                                            <span class="text-dark fs-15">Top to rate</span>
+                                        </a>
+                                    </li>
+                                    <li class="border-top py-11">
+                                        <a href="#" class="text-decoration-none">
+                                            <img alt="pic" class="img-fluid" src="./img/icons/det-edit2_blue.svg">&nbsp;&nbsp;
+                                            <span class="text-dark fs-15">Edit this</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="p-3 mt-3 border rounded-3 s_alsobtn">
+                            <h6 class="fs-17 fw-bold mb-4">Also listed in</h6>
+                            <div>
+                                <button class="btn btn-sm text-secondary border rounded-pill shadow-sm fs-12 p-12 mt-2">
+                                    <span>Hotels</span>
+                                </button>
+                                <button class="btn btn-sm text-secondary border rounded-pill shadow-sm  fs-12 p-12 mt-2">
+                                    <span>Lodgings Services</span>
+                                </button>
+                            </div>
+                            <div class="my-2">
+                                <button class="btn btn-sm text-secondary border rounded-pill shadow-sm  fs-12 p-12">
+                                    <span>AC Lodging Services</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-sm text-secondary border rounded-4 shadow-sm  fs-13 p-12 text-start ps-3">
+                                    <span>Lodging Services (Rs 1001 To Rs 2000)</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="p-3 mt-3 border rounded-3">
+                            <h6 class="fs-17 fw-bold">Report an error</h6>
+                            <p class="text-secondary fs-14 my-3">Help us to make Justdail more<br>
+                            updated and more relavant for you.</p>
+                            <a href="#" class="btn btn-outline-primary text-primary fw-bold px-4 rounded-3 s_readallreview">
+                                <span>Report Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>        
+            </main>
+            <!-- Large screen main section end -->
+
+            <!-- Offcanvas section start -->
+            <div class="offcanvas-lg offcanvas-bottom d-lg-none d-xl-none" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-body p-0">
+                <div class="mt-2">
+                    <div>
+                    <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharefbicn.svg" class="img-fluid px-3 py-2" alt="facebook"><span class="text-dark-emphasis fs-6">Share on Facebook </span></a>
+                    </div>
+                    <div>
+                    <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharewhatsappicn.svg" class="img-fluid px-3 py-2" alt="facebook"><span class="text-dark-emphasis fs-6">Send on WhatApp</span></a>
+                    </div>
+                    <div>
+                    <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewshareicn.svg" class="img-fluid px-3 py-2" alt="facebook"><span class="text-dark-emphasis fs-6">Copy Link</span></a>
+                    </div>
+                    <div>
+                    <a href="#" class="text-decoration-none"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/sclnewsharemoreicn.svg" class="img-fluid px-3 py-2" style="width: 60px; height: 60px;" alt="facebook"><span class="text-dark-emphasis fs-6">More Options</span></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Offcanvas section end -->
+            <!-- Small screen section start -->
+            <div class="d-lg-none d-xl-none">
+            <!-- Small screen header section start -->
+            <!-- Header Section Start -->
+            <header class="bg-white">
+                <div class="row m-0 d-flex pt-3">
+                <div class="col-5 m-0 ">
+                    <div class="d-flex">
+                    <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/nwtbakarw.svg" alt="LeftArrow" class="img-fluid d_logo"></a>
+                    <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/hpnwhdrlogoicn.svg" alt="JdLogo" class="img-fluid d_logo"></a>
+                    </div>
+                </div>
+                <div class="col-7 p-0 m-0 pe-4">
+                    <div class="float-end d-flex">
+                    <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/open-app-2023.svg" class="img-fluid px-2" alt="open App"></a>
+                    <a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headernotifnicn.svg" alt="logo" class="img-fluid pe-2" style="margin-top: 2.3px;"></a>
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headershare.svg" alt="logo" class="img-fluid" style="margin-top: 2.3px;"></a>
+                    </div>
+                </div>
+                </div>
+                <div class="row m-0 bg-white">
+                <div class="col-12">
+                    <form class="pt-0 pb-0 d-block d-lg-none bg-white">                            
+                    <div class="my-3 d-flex border border-dark border-1 rounded-3">                              
+                        <button class="btn border-0 bg-white rounded-circle pe-0">
+                            <img src="./img/srch.svg" alt="pic">
+                        </button>
+                        <input type="search" placeholder="Packers and Movers" class="form-control border border-0 shadow-none px-0">
+                        <button type="submit" class="btn border-0 bg-white rounded-circle px-2">
+                            <img src="./img/mic.svg" width="21px" alt="pic">
+                        </button>
+                    </div>                            
+                    </form>
+                </div>
+                </div>
+            </header>
+            <!-- Header Section End -->
+            <!-- Small screen header section end -->
+
+            <!-- Small screen main section-->
+            <main style="margin-top:8%;" class="s_ssmain">
+                <div class="row">
+                    <div class="col position-relative">
+                        <div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="rounded-circle" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="rounded-circle" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="rounded-circle" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="rounded-circle" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="rounded-circle" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" class="rounded-circle" aria-label="Slide 7"></button>
+                            </div>
+                            <img class="img-fluid position-absolute s_like" src="./img/icons/dtljdvrfd.svg" alt="pic">
+                        </div>
+                        <div class="s_mobbanner">
+                            <a href="#">
+                                <img class="img-fluid" src="https://content.jdmagicbox.com/comp/malappuram/z4/9999px483.x483.160527140455.i8z4/catalogue/sreelakam-home-thattakam-angadipuram-malappuram-hotels-0q33nresrn.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-1 border-bottom">                
+                    <div class="border-bottom">
+                        <div class="mt-2">
+                            <span class="fw-bold fs-5">Sreelakam Home Thattakam</span>
+                            <img alt="pic" class="img-fluid border p-1 rounded-circle" width="25px" src="./img/icons/vend_favourite_icon.svg">                      
+                        </div>
+                        <div class="d-flex fs-12">
+                            <span>Angadipuram</span>
+                        </div>
+                        <div class="ms-1">
+                            <span class="fw-semibold">4.3</span>
+                            <span class="fs-11">
+                                <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                <i class="fa-solid fa-star" style="color: #ed8c1d;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                            </span>
+                            <span class="fs-11 text-body-tertiary fw-semibold">70 Ratings</span>
+                            <div>
+                                <span class="border fs-11 px-1 bg-body-secondary rounded-pill">7 YRS</span>
+                                <img alt="pic" class="img-fluid ms-2" width="50px" src="./img/icons/verified_2x.gif">
+                            </div>
+                        </div>
+                        <div class="row text-center s_SM_icons my-4">
+                            <a href="#" class="col-3">
+                                <figure>
+                                    <img alt="pic" class="img-fluid border border-primary rounded-circle p-11 fs-12" src="./img/icons/dtlcallicn.svg">
+                                    <figcaption class="fs-10">Call</figcaption>
+                                </figure>
+                            </a>
+                            <a href="#" class="col-3">
+                                <figure>
+                                    <img alt="pic" class="img-fluid border border-primary rounded-circle p-11 fs-12" src="./img/icons/dtlmapicn.svg">
+                                    <figcaption class="fs-10">Map</figcaption>
+                                </figure>
+                            </a>
+                            <a href="#" class="col-3">
+                                <figure>
+                                    <img alt="pic" class="img-fluid border border-primary rounded-circle p-11 fs-12" src="./img/icons/whatsapp-detl.svg">
+                                    <figcaption class="fs-10">WhatsApp</figcaption>
+                                </figure>
+                            </a>
+                            <a href="#" class="col-3">
+                                <figure>
+                                    <img alt="pic" class="img-fluid border border-primary rounded-circle p-11 fs-12" src="./img/icons/dtlshareicn.svg">
+                                    <figcaption class="fs-10">Share</figcaption>
+                                </figure>
+                            </a>                        
+                        </div>
+                        <div class="row">
+                            <div class="col btn mb-2">
+                                <div class="border bg-primary text-light fw-semibold fs-15 py-1 rounded-pill">
+                                    Enquire Now 
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>      
+                    <div class="p-3 border-bottom">
+                        <p class="fw-bold text-dark-emphasis">Check Availability</p>
+                        <div class="row">
+                            <div class="col-5">
+                                <h6 class="fs-12 text-dark-emphasis">check in</h6>
+                                <div class="row m-0 text-center">
+                                    <div class="border py-2 fs-12 rounded  border-dark-subtle">
+                                        <span>Sat, 10 Jun</span>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <div class="col-5">
+                                <h6 class="fs-12 text-dark-emphasis" style="margin-left: -12px;">check in</h6>
+                                <div class="row text-center">
+                                    <div class="border py-2 fs-12 rounded  border-dark-subtle">
+                                        <span>Sun, 11 Jun</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 text-center">
+                                <img alt="pic" class="img-fluid" src="./img/icons/dtlprsnicn.svg" style="margin-top:-10px;">
+                                <div class="row m-0 text-center">
+                                    <div class="border py-2 fs-12 rounded  border-dark-subtle s_2number"  style="margin-top:-2px;">
+                                        <span class="">2</span>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        <div classs="row">
+                            <div class="col mt-3 border-top pt-3 pb-1">
+                                <img  alt="pic" class="img-fluid" src="./img/icons/dtlcallicn.svg">
+                                <span class="fs-14 ms-2 fw-bold text-dark-emphasis">Call for rates and availability</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <p class="fw-bold fs-14">Rate this</p>
+                        <div class="row">
+                            <div class="col d-flex">
+                                <div class="me-2">
+                                    <a href="#">
+                                        <i class="fa-regular fa-star border p-2 fa-xl rounded" style="color: #999898;"></i>
+                                    </a>
+                                </div>
+                                <div class="mx-2">
+                                    <a href="#">
+                                        <i class="fa-regular fa-star border p-2 fa-xl rounded" style="color: #999898;"></i>
+                                    </a>
+                                </div>
+                                <div class="mx-2">
+                                    <a href="#">
+                                        <i class="fa-regular fa-star border p-2 fa-xl rounded" style="color: #999898;"></i>
+                                    </a>
+                                </div>
+                                <div class="mx-2">
+                                    <a href="#">
+                                        <i class="fa-regular fa-star border p-2 fa-xl rounded" style="color: #999898;"></i>
+                                    </a>
+                                </div>
+                                <div class="mx-2">
+                                    <a href="#">
+                                        <i class="fa-regular fa-star border p-2 fa-xl rounded" style="color: #999898;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                              
+                </div>
+                <div class="row">
+                    <ul class="list-unstyled border-bottom">
+                        <li class="d-flex border-bottom py-3">
+                            <img alt="pic" class="img-fluid ms-2" src="./img/icons/dtladrsmap.svg">
+                            <span class="fs-13 ms-2 my-auto">Thekkenada, Angadipuram, Malappuram - 679321 (Near Thirumandhamkunnu Temple)
+                            <br><img alt="pic" class="img-fluid" src="./img/icons/copy-dtl1.svg"> <span class="fs-12">Copy Address</span>
+                            </span>
+                            <iframe width="60px" height="60px" class="rounded mx-3 my-auto float-end ms-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58104.09446564324!2d74.83092655441051!3d24.46792214071161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39667381d35aea05%3A0x42c8caa932bb6fa1!2sNeemuch%2C%20Madhya%20Pradesh%20458441!5e0!3m2!1sen!2sin!4v1686222963099!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </li>
+                        <li class="border-bottom py-3">
+                            <img alt="pic" class="img-fluid ms-2" src="./img/icons/dtlvndrcall.svg">
+                            <span class="ms-2">9874563212</span>
+                        </li>
+                        <li class="py-3">
+                            <img alt="pic" class="img-fluid ms-2" src="./img/icons/dtlpencilicn.svg">
+                            <span class="ms-2 fs-14">Edit this listing</span>
+                        </li>
+                    </ul>                
+                </div>
+                <div class="row p-3 pt-2 border-bottom"><!--Photos-->
+                    <span class="fw-bold mb-3">Photos</span>
+                    <div class="col-md-3 col">
+                        <a href="javascript:void()" class="text-decoration-none">
+                            <figure class=" position-relative text-center">
+                                <img class="img-fluid rounded" src="./img/sreelakam-home-thattakam-angadipuram-malappuram-hotels-jjg4pzca4m.avif" alt="picture" title="picture">
+                                <figcaption class="text-light bg-dark bg-opacity-75 w-100 fw-bold mt-2 position-absolute bottom-0 fs-14 rounded-bottom">All(39)</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col">
+                        <a href="javascript:void()" class="text-decoration-none">
+                            <figure class="position-relative text-center">
+                                <img class="img-fluid rounded" src="./img/sreelakam-home-thattakam-malappuram-1swffncnft.avif" alt="picture" title="picture">
+                                <figcaption class="text-light bg-dark bg-opacity-75 w-100 fw-bold mt-2 position-absolute bottom-0 fs-14 rounded-bottom">Exterior(17)</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-3 s_smphoto1">
+                        <a href="javascript:void()" class="text-decoration-none">
+                            <figure class="position-relative text-center">
+                                <img class="img-fluid rounded" src="https://images.jdmagicbox.com/comp/malappuram/z4/9999px483.x483.160527140455.i8z4/catalogue/sreelakam-home-thattakam-malappuram-9gfja.jpg?temp=1" alt="picture" title="picture">
+                                <figcaption class="text-light bg-dark bg-opacity-75 w-100 fw-bold mt-2 position-absolute bottom-0 start-0 fs-14 rounded-bottom">Rooms(4)</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- <a href="javascript:void()">
+                            <figure>
+                                <img src="https://images.jdmagicbox.com/comp/malappuram/z4/9999px483.x483.160527140455.i8z4/catalogue/sreelakam-home-thattakam-malappuram-9gfja.jpg?temp=1" alt="picture" title="picture" class="img-fluid">
+                                <figcaption>Picture</figcaption>
+                            </figure>
+                        </a> -->
+                    </div>
+                    <button class="btn text-start border-0">
+                        <span class="border p-2 rounded-pill fs-13 text-primary s_readallreview border-primary">
+                            Upload Photo
+                        </span>
+                    </button>
+                </div>
+                <!---->
+                <div class="p-3 row border-bottom">
+                    <span class="fw-bold">Amenities</span>
+                    <div class="mt-2">
+                        <img src="./img/icons/det-tick.svg" width="12px"><spna class="fs-12 fw-bold ms-2">Members Only</spna>
+                    </div>
+                </div>
+                <div class="p-3 row border-bottom">
+                    <span class="fw-bold">Questions and Answers</span>
+                    <p class="fs-14 my-3">Would you like to ask a question</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary text-primary fw-bold rounded-4 fs-12 ps-12 ms-2 w-50 s_readallreview">
+                        <span>Post your Question</span>
+                    </a>
+                </div>
+                <div class="p-3 row border-bottom">
+                    <a href="#" class="text-black text-decoration-none"><h6 class="fs-14 fw-bold">Reviews & Ratings</h6></a>
+                    <div class="d-flex pe-2">
+                        <div class="mt-2 ms-0">
+                            <span class="text-light fw-bold fs-2 rounded-3" style="background-color: rgb(2, 129, 23); padding:10px;">4.3</span>
+                        </div>    
+                        <div class="ms-3 pe-5">
+                            <span class="fs-13 fw-bold">70 ratings</span>
+                            <p class="fs-12">Jd rating index based on 70 ratings across the web</p>
+                        </div>
+                    </div>
+                    <h6 class="fw-semibold mt-3 fs-12">Recent rating trend</h6>
+                    <div class="row s_5star">
+                        <div class="col text-center">
+                            <div class="border rounded-pill ps-0  overflow-x-scroll">
+                            <span class="fs-12 pe-2">5.0</span><i class="fa-solid fa-star fa-xs bg-orange"></i>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="border rounded-pill ps-0">
+                            <span class="fs-12 pe-2">5.0</span><i class="fa-solid fa-star fa-xs bg-orange"></i>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="border rounded-pill ps-0">
+                            <span class="fs-12 pe-2">5.0</span><i class="fa-solid fa-star fa-xs bg-orange"></i>
+                            </div>
+                        </div>
+                        <div class="col text-center s_star2">
+                            <div class="border rounded-pill ps-0">
+                            <span class="fs-12 pe-2">5.0</span><i class="fa-solid fa-star fa-xs bg-orange"></i>
+                            </div>
+                        </div>
+                        <div class="col text-center s_star1">
+                        <div class="border rounded-pill ps-0">
+                            <span class="fs-12 pe-2">5.0</span><i class="fa-solid fa-star fa-xs bg-orange"></i>
+                            </div>
+                        </div>
+                        <div class="col text-center s_star1">
+                        <div class="border rounded-pill ps-0">
+                            <span class="fs-12 pe-2">5.0</span><i class="fa-solid fa-star fa-xs bg-orange"></i>
+                            </div>
+                        </div>
+                        <div class="col text-center s_star1">
+                        <div class="border rounded-pill ps-0">
+                            <span class="fs-12 pe-2">5.0</span><i class="fa-solid fa-star fa-xs bg-orange"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- User review section start -->
+                <div class="row p-3">
+                    <p class="fw-semibold fs-14">User Reviews</p>
+                    <div class="my-auto">
+                        <a href="#" class="btn btn-sm border fs-12 text-primary bg-primary-subtle border-primary-subtle p-12 my-1">Relevant</a>
+                        <a href="#" class="btn btn-sm border fs-12 bg-secondary-subtle p-12 my-1 fw-semibold">Friends Ratings</a>
+                        <a href="#" class="btn btn-sm border fs-12 bg-body-secondary p-12 my-1 fw-semibold">Latest</a>
+                        <a href="#" class="btn btn-sm border fs-12 bg-body-secondary p-12 my-1 fw-semibold">High to Low</a>
+                        <a href="#" class="btn btn-sm border fs-12 bg-body-secondary p-12 my-1 fw-semibold">High to Low</a>
+                    </div>
+                </div>
+                <!-- User review section end -->
+                <!-- Comment section start -->
+                <div class="row mt-2">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img alt="pic" class="img-fluid" width="40px" src="./img/profileImg">
+                        </a>
+                        <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                            <span class="fw-semibold">Sudheesh</span>
+                            <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="fs-12 float-end">28 Oct 2019</span>
+                        <span>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                        </span>
+                    </div>
+                    <p class="fs-12 mt-3 mb-2">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                    <div class="d-flex justify-content-between s_iconone border-top pb-2 s_border_bottom">
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_helpful_icon.svg">
+                            <span class="fw-semibold fs-12">Helpful</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_comment_icon.svg">
+                            <span class="fw-semibold fs-12">Comment</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/det-share2.svg">
+                            <span class="fw-semibold fs-12">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img alt="pic" class="img-fluid" width="40px" src="./img/profileImg">
+                        </a>
+                        <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                            <span class="fw-semibold">Sudheesh</span>
+                            <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="fs-12 float-end">28 Oct 2019</span>
+                        <span>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                        </span>
+                    </div>
+                    <p class="fs-12 mt-3 mb-2">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                    <div class="d-flex justify-content-between s_iconone border-top pb-2 s_border_bottom">
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_helpful_icon.svg">
+                            <span class="fw-semibold fs-12">Helpful</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_comment_icon.svg">
+                            <span class="fw-semibold fs-12">Comment</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/det-share2.svg">
+                            <span class="fw-semibold fs-12">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img alt="pic" class="img-fluid" width="40px" src="./img/profileImg">
+                        </a>
+                        <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                            <span class="fw-semibold">Sudheesh</span>
+                            <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="fs-12 float-end">28 Oct 2019</span>
+                        <span>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                        </span>
+                    </div>
+                    <p class="fs-12 mt-3 mb-2">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                    <div class="d-flex justify-content-between s_iconone border-top pb-2 s_border_bottom">
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_helpful_icon.svg">
+                            <span class="fw-semibold fs-12">Helpful</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_comment_icon.svg">
+                            <span class="fw-semibold fs-12">Comment</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/det-share2.svg">
+                            <span class="fw-semibold fs-12">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img alt="pic" class="img-fluid" width="40px" src="./img/profileImg">
+                        </a>
+                        <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                            <span class="fw-semibold">Sudheesh</span>
+                            <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="fs-12 float-end">28 Oct 2019</span>
+                        <span>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                        </span>
+                    </div>
+                    <p class="fs-12 mt-3 mb-2">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                    <div class="d-flex justify-content-between s_iconone border-top pb-2 s_border_bottom">
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_helpful_icon.svg">
+                            <span class="fw-semibold fs-12">Helpful</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_comment_icon.svg">
+                            <span class="fw-semibold fs-12">Comment</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/det-share2.svg">
+                            <span class="fw-semibold fs-12">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img alt="pic" class="img-fluid" width="40px" src="./img/profileImg">
+                        </a>
+                        <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                            <span class="fw-semibold">Sudheesh</span>
+                            <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="fs-12 float-end">28 Oct 2019</span>
+                        <span>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                        </span>
+                    </div>
+                    <p class="fs-12 mt-3 mb-2">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                    <div class="d-flex justify-content-between s_iconone border-top pb-2 s_border_bottom">
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_helpful_icon.svg">
+                            <span class="fw-semibold fs-12">Helpful</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_comment_icon.svg">
+                            <span class="fw-semibold fs-12">Comment</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/det-share2.svg">
+                            <span class="fw-semibold fs-12">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img alt="pic" class="img-fluid" width="40px" src="./img/profileImg">
+                        </a>
+                        <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                            <span class="fw-semibold">Sudheesh</span>
+                            <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="fs-12 float-end">28 Oct 2019</span>
+                        <span>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                        </span>
+                    </div>
+                    <p class="fs-12 mt-3 mb-2">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                    <div class="d-flex justify-content-between s_iconone border-top pb-2 s_border_bottom">
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_helpful_icon.svg">
+                            <span class="fw-semibold fs-12">Helpful</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_comment_icon.svg">
+                            <span class="fw-semibold fs-12">Comment</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/det-share2.svg">
+                            <span class="fw-semibold fs-12">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="d-flex">
+                        <a href="#">
+                            <img alt="pic" class="img-fluid" width="40px" src="./img/profileImg">
+                        </a>
+                        <a href="#" class="ms-3 text-decoration-none text-dark mt-1">
+                            <span class="fw-semibold">Sudheesh</span>
+                            <p class="fs-12 text-secondary">3 reviews, 0 followers</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="fs-12 float-end">28 Oct 2019</span>
+                        <span>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star" style="color: #ed8c1d;"></i>
+                            <i class="fa-solid fa-xs fa-star-half-stroke" style="color: #ed8c1d;"></i>
+                        </span>
+                    </div>
+                    <p class="fs-12 mt-3 mb-2">I like most the location of the srrelakam infront of the devi temple and the rooms are very beautiful and specious.. over all value for the money.</p> 
+                    <div class="d-flex justify-content-between s_iconone border-top pb-2 s_border_bottom">
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_helpful_icon.svg">
+                            <span class="fw-semibold fs-12">Helpful</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/black_comment_icon.svg">
+                            <span class="fw-semibold fs-12">Comment</span>
+                        </a>
+                        <a href="#" class="btn border-0">
+                            <img alt="pic" class="img-fluid" width="15px" src="./img/icons/det-share2.svg">
+                            <span class="fw-semibold fs-12">Share</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Comment section end -->
+                <!--Read button section start-->
+                <div class="row text-center s_read">
+                    <a href="#" class="btn border-0 py-2">
+                        <span class="fw-semibold fs-14">Read all reviews</span>
+                    </a>
+                </div>
+                <!--Read button section end-->
+                <!-- Report Arrow section start -->
+                <div class=" row d-flex">
+                    <div>
+                        <a href="#" class="btn fw-bold text-dark-emphasis" style="padding-top: 10px;">Report An Error</a>
+                        <i class="fa-solid fa-chevron-right float-end my-3 me-2" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <!-- Report Arrow section end -->
+                <!-- Also listed section start -->
+                <div class="row p-3 border-top s_also">
+                    <p class="fw-bold">Also Listed In</p>
+                    <a href="#" class="text-decoration-none text-dark-emphasis fs-15">Hotels</a>
+                    <a href="#" class="text-decoration-none text-dark-emphasis fs-15 my-1">Lodging Services</a>
+                    <a href="#" class="text-decoration-none text-dark-emphasis fs-15 my-1">AC Lodging Services</a>
+                    <a href="#" class="text-decoration-none text-dark-emphasis fs-15">Lodging Services (Rs 1001 TO Rs 2000)</a>
+                </div>
+                <!-- Also listed section end -->
+                <!-- small arrow options start-->
+                <div class="row border-bottom">
+                    <p class="fs-12 s_text my-2">
+                        <a href="#" >Malappuram</a> <i class="fa-solid fa-chevron-right" style="color: #757677;"></i> <a href="#">Hotels In Malappuram</a> <i class="fa-solid fa-chevron-right" style="color: #757677;"></i> <a href="#">Hotels In Angadipuram</a> <i class="fa-solid fa-chevron-right" style="color: #757677;"></i> <a href="#">Sreelakam Home Thattakam</a>
+                    </p>
+                </div>
+                <!-- small arrow options end-->
+            </main>
+            <!-- Small screen main section-->
+
+            <!--Small screen footer section -->
+            <footer>
+                <div class="footer1 p-3 border-bottom row">
+                    <h6 class="fw-bold fs-18 text-dark-emphasis">Sreelakam Home Thattakam in Angadipuram, Malappuram</h6>  
+                    <p class="fs-14 text-dark-emphasis">Sreelakam Home Thattakam listed under Hotels in Angadipuram, Malappuram. Check Address, Contact Number, Ratings & Reviews, Photos, Maps etc, on Justdial.</p>
+                    <p class="fs-14 text-dark-emphasis">Whether it is a vacation with family or a business trip, everyone looks for safe hotels Hotels that have the best facilities. Apart from the basic facilities, some of the exclusive places also have a spa, kid's area, pool and more to offer the best service to the guests. From bed and breakfast to complimentary meals, you can enjoy some of the best services when you book the right place.</p>
+                    <p class="fs-14 text-dark-emphasis">Sreelakam Home Thattakam in Angadipuram Malappuram welcomes people from all walks of life.</p>
+
+                    <h6 class="fw-bold fs-18 text-dark-emphasis">Sreelakam Home Thattakam Location and Overview</h6>
+                    <p class="fs-14 text-dark-emphasis">Sreelakam Home Thattakam in Angadipuram, Malappuram is a reliable name in the industry as they aim to deliver the best experience to their customers. This has helped them build up a loyal customer base. They started their journey in 2016 and ever since, they have ensured that the customer remains at the centre of their business operations and philosophy. As they are located in a favourable neighbourhood, exactly at Thekkenada, Near Thirumandhamkunnu Temple, Angadipuram-679321 near Thirumandhamkunnu Temple, it is easy to locate Sreelakam Home Thattakam on the map. For any kind of assistance or questions, it is best to contact them directly during their business hours.</p>
+
+                    <h6 class="fw-bold fs-18 text-dark-emphasis">Sreelakam Home Thattakam Products and Services offered:</h6>
+                    <p class="fs-14 text-dark-emphasis">Also listed in Hotels, Lodging Services, AC Lodging Services, Lodging Services (Rs 1001 To Rs 2000) etc. Sreelakam Home Thattakam in Angadipuram is one of the most trustworthy names in the field. They have received a 4.2 rating from their customers. Their service/product range includes 24 Hour Check In Available, Room Typeentire Apartment,room, Ac Rooms Available, 24 Hours Check In, Air Conditioned, Hot Water, Parking Available, Laundry Service, Help Desk, Dining Hall, Couple Friendlyyes, etc, all available at competitive prices. To make the transactional experience hassle-free for customers, they accept multiple modes of payment such as Cash, Debit Cards, Cheques, Credit Card. The best time to contact them is anytime between Open 24 Hrs - Open 24 Hrs.</p>
+                    <p class="fs-14 text-dark-emphasis">Kindly scroll up to check the detailed address and contact number of Sreelakam Home Thattakam in Malappuram.</p>
+                </div>
+                <div class="footer2 p-3">
+                    <h6 class="fw-bold fs-18 text-dark-emphasis">Frequently Asked Question</h6>
+                    
+                    <h6 class="fs-14 fw-bold text-dark-emphasis mt-4 mb-3">1. Can I amend my booking at Sreelakam Home Thattakam?</h6>
+                    <p class="fs-14 text-dark-emphasis">Sreelakam Home Thattakam has its own policy regarding booking amendment. If you have booked a stay at the hotel, we recommend getting in touch with the reservation to check if any amendment is possible or not.</p>
+                    
+                    <h6 class="fs-14 fw-bold text-dark-emphasis mt-4 mb-3">2. What are some of the facilities offered by Sreelakam Home Thattakam?</h6>
+                    <p class="fs-14 text-dark-emphasis">You can get toiletries, towels, drinking water and a welcome drink as complimentary service at every hotel.</p>
+                    
+                    <h6 class="fs-14 fw-bold text-dark-emphasis mt-4 mb-3">3. Can I request room service during my stay in Sreelakam Home Thattakam?</h6>
+                    <p class="fs-14 text-dark-emphasis">Yes, Sreelakam Home Thattakam provides free room service to maintain cleanliness and hygienic conditions.</p>
+                    
+                    <h6 class="fs-14 fw-bold text-dark-emphasis mt-4 mb-3">4. Is there a dine-in area at Sreelakam Home Thattakam?</h6>
+                    <p class="fs-14 text-dark-emphasis">Sreelakam Home Thattakam has a dine-in area so that guests can enjoy the meals while staying at the hotel.</p>
+                    
+                    <h6 class="fs-14 fw-bold text-dark-emphasis mt-4 mb-3">5. Is Sreelakam Home Thattakam a safe place to stay for families?</h6>
+                    <p class="fs-14 text-dark-emphasis">Sreelakam Home Thattakam is one of the recommended Hotels that offers the best service to the guests. It has essential facilities so that you enjoy a comfortable stay.</p>
+                    
+                    <h6 class="fs-14 fw-bold text-dark-emphasis mt-4 mb-3">6. Do I need any documents during check-in time?</h6>
+                    <p class="fs-14 text-dark-emphasis">Guests need to provide a copy of any identity proof while checking in. This is done to have a record and make the place safe for all guests.</p>
+                </div>
+                <!-- Accordion section start -->
+                <div class="footer3">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none bg-white fs-13 border-top" style="padding:12px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Popular categories in Malappuram
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Body Masssge Centers</a></li>
+                                    <li><a href="#">Cinema Halls</a></li>
+                                    <li><a href="#">Schools</a></li>
+                                    <li><a href="#">Beauty Spas</a></li>
+                                    <li><a href="#">Dermatologists</a></li>
+                                    <li><a href="#">Hospitals</a></li>
+                                    <li><a href="#">Malls</a></li>
+                                    <li><a href="#">Gyms</a></li>
+                                    <li><a href="#">Beauty Parlours</a></li>
+                                    <li><a href="#">Estate Agents</a></li>
+                                    <li><a href="#">Banqute Halls</a></li>
+                                    <li><a href="#">ENT Doctors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed shadow-none bg-white fs-13 border-bottom" style="padding:12px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Hotels in popular cities
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Hotels in Mumbai</a></li>
+                                    <li><a href="#">Hotels in Bangalore</a></li>
+                                    <li><a href="#">Hotels in Hydrabad</a></li>
+                                    <li><a href="#">Hotels in Chennai</a></li>
+                                    <li><a href="#">Hotels in Pune</a></li>
+                                    <li><a href="#">Hotels in Kolkata</a></li>
+                                    <li><a href="#">Hotels in Ahmedabad</a></li>
+                                    <li><a href="#">Hotels in Chandigarh</a></li>
+                                    <li><a href="#">Hotels in Jaipur</a></li>
+                                    <li><a href="#">Hotels in Coimbatore</a></li>
+                                    <li><a href="#">Hotels in Lucknow</a></li>
+                                    <li><a href="#">Hotels in Surat</a></li>
+                                    <li><a href="#">Hotels in Indore</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion section end-->
+                <!-- small screen footer button start -->
+                <div class="row">
+                    <div class="col-4 btn border-0">
+                        <div class="border border-primary bg-primary p-2 rounded-2">
+                            <img class="" src="./img/icons/dtal_phnewhite.svg">
+                            <span class="fs-14 s_smallbtn text-light fw-semibold">Call Now</span>
+                        </div>
+                    </div>
+                    <div class="col-4 btn m-0">
+                        <div class="border border-primary p-2 rounded-2">
+                            <span class="fs-13 s_smallbtn text-primary fw-bold">Enquire Now</span>
+                        </div>
+                    </div>
+                    <div class="col-4 btn">
+                        <div class="border border-primary p-2 rounded-2">
+                            <img class="" src="./img/icons/whatsapp-detl.svg" width="20px">
+                            <span class="fs-13 text-primary fw-bold">Chat</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- small screen footer button end -->
+                <div class="footer5"></div>
+            </footer>
+            <!--Small screen footer end -->
+            </div>
+            <!--Small screen section end -->
+
+            <!-- Large screen footer section start -->
+            <footer class="row d-none d-sm-block d-md-none d-lg-block">
+                <div class="footer-1 p-5 pt-4 border-bottom">
+                    <h6 class="fw-bold fs-16">Hotels in popular cities</h6>
+                    <div class="fs-11 s_mostsearch">
+                        <a href="#">Hotels in Delhi</a> <span>|</span>
+                        <a href="#">Hotels in Mumbai</a> <span>|</span>
+                        <a href="#">Hotels in Bangalore</a> <span>|</span>
+                        <a href="#">Hotels in Hydrabad</a> <span>|</span>
+                        <a href="#">Hotels in Chennia</a> <span>|</span>
+                        <a href="#">Hotels in PuneHotels in Ahmedabad</a> <span>|</span> 
+                        <a href="#">Hotels in Kolkata</a> <span>|</span>
+                        <a href="#">Hotels in Jaipur</a> <span>|</span>
+                        <a href="#">Hotels in Chandigarh</a> <span>|</span>
+                        <a href="#">Hotels in Coimbatore</a> <span>|</span>
+                        <a href="#">Hotels in Lucknow</a> <span>|</span>
+                        <a href="#">Hotels in Surat</a> <span>|</span>
+                        <a href="#">Hotels in Indore</a> <span>|</span>
+                        <a href="#">Hotels in Patna</a> <span>|</span>
+                        <a href="#">Hotels in Nagpur</a> <span>|</span>
+                        <a href="#">Hotels in Ernakulam</a> <span>|</span>
+                        <a href="#">Hotels in Bhopal</a> <span>|</span>
+                        <a href="#">Hotels in Vadodara</a> <span>|</span>
+                        <a href="#">Hotels in Ludhiana</a> <span>|</span>
+                        <a href="#">Hotels in Kanpur</a> <span>|</span>
+                        <a href="#">Hotels in Nashik</a> <span>|</span>
+                        <a href="#">Hotels in Varanasi</a> <span>|</span>
+                        <a href="#">Hotels in Visakhapatnam</a> <span>|</span>
+                        <a href="#">Hotels in Rajkot</a> <span>|</span>
+                        <a href="#">Hotels in Raipur-Chhattisgarh</a> <span>|</span>
+                        <a href="#">Hotels in Vijayawada</a> <span>|</span>
+                        <a href="#">Hotels in Madurai</a> <span>|</span>
+                        <a href="#">Hotels in Ranchi</a> <span>|</span>
+                        <a href="#">Hotels in Goa</a> <span>|</span>
+                        <a href="#">Hotels in Thiruvananthapuram</a> <span>|</span>
+                        <a href="#">Hotels in Bhubaneshwar</a> <span>|</span>
+                        <a href="#">Hotels in Allahabad</a> <span>|</span>
+                        <a href="#">Hotels in Aurangabad-Maharashtra</a> <span>|</span>
+                        <a href="#">Hotels in Dehradun</a> <span>|</span>
+                        <a href="#">Hotels in Mysore</a> <span>|</span>
+                        <a href="#">Hotels in Trichy</a> <span>|</span>
+                        <a href="#">Hotels in Guwahati</a> <span>|</span>
+                        <a href="#">Hotels in Agra</a> <span>|</span>
+                        <a href="#">Hotels in Kozhikode</a> <span>|</span>
+                        <a href="#">Hotels in Jodhpur</a> <span>|</span>
+                        <a href="#">Hotels in Thrissur</a> <span>|</span>
+                        <a href="#">Hotels in Kolhapur</a> <span>|</span>
+                        <a href="#">Hotels in Salem</a> <span>|</span>
+                        <a href="#">Hotels in Meerut</a> <span>|</span>
+                        <a href="#">Hotels in Mangalore</a> <span>|</span>
+                        <a href="#">Hotels in Gorakhpur</a> <span>|</span>
+                        <a href="#">Hotels in Jabalpur</a> <span>|</span>
+                        <a href="#">Hotels in Jalandhar</a> <span>|</span>
+                        <a href="#">Hotels in Gwalior</a>
+                    </div>
+                    <h6 class="fs-16 fw-bold mt-4">Popular Categories</h6>
+                    <div class="fs-11 s_mostsearch">
+                        <a href="#">Body Massage Centers</a> <span>|</span>
+                        <a href="#">Cinema Halls</a> <span>|</span>
+                        <a href="#">Schools</a> <span>|</span>
+                        <a href="#">Beauty Spas</a> <span>|</span>
+                        <a href="#">Dermatologists</a> <span>|</span>
+                        <a href="#">Hospitals</a> <span>|</span>
+                        <a href="#">Malls</a> <span>|</span>
+                        <a href="#">Gyms</a> <span>|</span>
+                        <a href="#">Beauty Parlours</a> <span>|</span>
+                        <a href="#">Estate Agents</a> <span>|</span>
+                        <a href="#">Banquet Halls</a> <span>|</span>
+                        <a href="#">ENT Doctors</a> <span>|</span>
+                        <a href="#">Book Shops</a> <span>|</span>
+                        <a href="#">Bike On Rent</a> <span>|</span>
+                        <a href="#">Sexologist Doctors</a> <span>|</span>
+                        <a href="#">Neurologists</a> <span>|</span>
+                        <a href="#">Gynaecologist & Obstetrician Doctors</a> <span>|</span>
+                        <a href="#">Tiffin Services</a> <span>|</span>
+                        <a href="#">Travel Agents</a> <span>|</span>
+                        <a href="#">Paying Guest Accommodations</a> <span>|</span>
+                        <a href="#">General Physician Doctors</a> <span>|</span>
+                        <a href="#">Dentists</a> <span>|</span>
+                        <a href="#">Orthopaedic Doctors</a> <span>|</span>
+                        <a href="#">Chemists</a> <span>|</span>
+                        <a href="#">Motor Training Schools</a> <span>|</span>
+                        <a href="#">Gastroenterologists</a> <span>|</span>
+                        <a href="#">Car Rental</a> <span>|</span>
+                        <a href="#">Salons</a> <span>|</span>
+                        <a href="#">Courier Services</a> <span>|</span>
+                        <a href="#">Dance Classes</a> <span>|</span>
+                        <a href="#">Pathology Labs</a> <span>|</span>
+                        <a href="#">Taxi Services</a> <span>|</span>
+                        <a href="#">Cake Shops</a> <span>|</span>
+                        <a href="#">AC Repair & Services</a> <span>|</span>
+                        <a href="#">Mobile Phone Dealers</a> <span>|</span>
+                        <a href="#">Pet Shops</a> <span>|</span>
+                        <a href="#">Dmart</a> <span>|</span>
+                        <a href="#">Packers And Movers</a> <span>|</span>
+                        <a href="#">Psychiatrists</a> <span>|</span>
+                        <a href="#">Dharamshalas</a> <span>|</span>
+                        <a href="#">Urologist Doctors</a> <span>|</span>
+                        <a href="#">Bakeries</a> <span>|</span>
+                        <a href="#">Bicycle Dealers</a> <span>|</span>
+                        <a href="#">Coffee Shops</a> <span>|</span>
+                        <a href="#">Paediatricians</a> <span>|</span>
+                        <a href="#">Sonography Centres</a> <span>|</span>
+                        <a href="#">Yoga Classes</a> <span>|</span>
+                        <a href="#">Hostels</a> <span>|</span>
+                        <a href="#">Cardiologists</a> <span>|</span>
+                        <a href="#">Electrical Shops</a> <span>|</span>
+                        <a href="#">Skin Care Clinics</a> <span>|</span>
+                        <a href="#">Diagnostic Centres</a> <span>|</span>
+                        <a href="#">Homeopathic Doctors</a> <span>|</span>
+                        <a href="#">Physiotherapists</a> <span>|</span>
+                        <a href="#">Photo Studios</a> <span>|</span>
+                        <a href="#">Plumbers</a> <span>|</span>
+                        <a href="#">Music Classes</a> <span>|</span>
+                        <a href="#">Electricians</a> <span>|</span>
+                        <a href="#">Sports Goods Dealers</a> <span>|</span>
+                        <a href="#">Shoe Dealers</a> <span>|</span>
+                        <a href="#">Hair Stylists</a> <span>|</span>
+                        <a href="#">Gift Shops</a> <span>|</span>
+                        <a href="#">Ophthalmologists</a> <span>|</span>
+                        <a href="#">Car Repair & Services</a> <span>|</span>
+                        <a href="#">Ayurvedic DoctorsEye Clinics</a> <span>|</span>
+                        <a href="#">Restaurants</a> <span>|</span>
+                        <a href="#">Carpenters</a> <span>|</span>
+                        <a href="#">Jewellery Showrooms</a> <span>|</span>
+                        <a href="#">Cooks On Hire</a> <span>|</span>
+                        <a href="#">Stationery Shops</a> <span>|</span>
+                        <a href="#">Nephrologists</a> <span>|</span>
+                        <a href="#">Caterers</a> <span>|</span>
+                        <a href="#">Interior Designers</a> <span>|</span>
+                        <a href="#">Rehabilitation Center</a> <span>|</span>
+                        <a href="#">Drug De Addiction Center</a> <span>|</span>
+                        <a href="#">Grocery Stores</a> <span>|</span>
+                        <a href="#">AC Repair</a> <span>|</span>
+                        <a href="#">Hotels</a> <span>|</span>
+                        <a href="#">Cab & Car Rental</a> <span>|</span>
+                        <a href="#">Spa & Salon</a> <span>|</span>
+                        <a href="#">Car service</a> <span>|</span>
+                        <a href="#">Lab Test</a> <span>|</span>
+                        <a href="#">On Demand Service</a> <span>|</span>
+                        <a href="#">JdSocial Blog</a> <span>|</span>
+                        <a href="#">Jd Curated Collection</a>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-8 ps-5">
+                    <div class="d-flex py-4 mt-3 s_social text-decoration-none">
+                        <p class="fs-6 pe-2 text-dark mt-1 fw-semibold">Follow us on</p>
+                        <div>
+                            <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_facebook_active.svg" class="img-fluid px-1" alt="pic"></a>
+                            <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_youtube_active.svg" class="img-fluid px-1" alt="pic"></a>
+                            <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_insta_active.svg" class="img-fluid px-1" alt="pic"></a>
+                            <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_linkedIn_active.svg" class="img-fluid px-1" alt="pic"></a>
+                            <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/flw_twitter_active.svg" class="img-fluid px-1" alt="pic"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 pe-4">
+                    <div class="d-flex s_store float-end mt-4 pt-3">
+                        <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/getapp_googleplay.png" class="img-fluid px-1" alt="logo"></a>
+                        <a href="#"><img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/getapp_appstore.png" class="img-fluid" alt="logo"></a>
+                    </div>
+                </div>
+                </div>
+                <hr>
+                <div class="ps-5 s_footer_lg lh-1 my-3">
+                <p class="text-dark" style="font-size: 14px;">Explore JD Curated Collection</p>
+                <a href="#" class="text-body-secondary">Travel & Tourism </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Beauty </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Health & Fitness </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Food & Beverage </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Banking & Finance </a> <span>|</span>
+                <a href="#" class="text-body-secondary">On demand Services </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Home & Office </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Education & Jobs </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Real Estate </a> <span>|</span>
+                <a href="#" class="text-body-secondary">Shopping & Recreation </a>
+                </div>
+                <hr>
+                <!-- Main Footer Section Start -->
+                <footer class="d-none d-lg-block">
+                <div class="row m-0 mx-0">
+                    <div class="col-2 s_ft">
+                        <div class="ps-4">
+                            <p class="fs-6 fw-semibold">Quick Links</p>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="#" class="text-body-secondary">About us</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">Investor Relations</a></li>
+                                <li class="py-1"><a href="#" class="text-body-secondary">We're hiring</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">Customer Care</a></li>
+                                <li class="py-1"><a href="#" class="text-body-secondary">Free Listing</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">What's New</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 s_ft mt-4 pt-3" style="margin-right: -50px !important;">
+                        <ul class="list-unstyled">
+                            <li class="py-1"><a href="#" class="text-body-secondary">Advertise</a></li>
+                            <li class="py-0"><a href="#" class="text-body-secondary">Media</a></li>
+                            <li class="py-1"><a href="#" class="text-body-secondary">Testimaniais</a></li>
+                            <li class="py-0"><a href="#" class="text-body-secondary">Feedback</a></li>
+                            <li class="py-1"><a href="#" class="text-body-secondary">Business Badge</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-2 s_ft" style="margin-right: -37px !important;">
+                        <div>
+                            <p class="fs-6 fw-semibold">Jd verticals</p>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="#" class="text-body-secondary">Jdmart</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">Bills & Recharge</a></li>
+                                <li class="py-1"><a href="#" class="text-body-secondary">Car service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1 s_ft mt-4 pt-3 mx-3">
+                        <div>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="#" class="text-body-secondary">Book a Table</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">AC Repair</a></li>
+                                <li class="py-1"><a href="#" class="text-body-secondary">Hospitals</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1 s_ft mt-4 pt-3 mx-3">
+                        <div>
+                            <ul class="list-unstyled px-2">
+                                <li class="py-1"><a href="#" class="text-body-secondary">Real Estate</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">Flights</a></li>
+                                <li class="py-1"><a href="#" class="text-body-secondary">Jobs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1 s_ft mt-4 pt-3 mx-2">
+                        <div>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="#" class="text-body-secondary">Movies</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">Bus</a></li>
+                                <li class="py-1"><a href="#" class="text-body-secondary">Automobile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1 s_ft mt-4 pt-3 mx-2">
+                        <div>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="#" class="text-body-secondary">Entertainment</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">Train</a></li>
+                                <li class="py-1"><a href="#" class="text-body-secondary">Jd Xperts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1 s_ft mt-4 pt-3 mx-4">
+                        <div>
+                            <ul class="list-unstyled">
+                                <li class="py-1"><a href="#" class="text-body-secondary">Doctors</a></li>
+                                <li class="py-0"><a href="#" class="text-body-secondary">Hotel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="ps-4 d-flex s_ft mt-5">
+                    <p class="s_para text-body-secondary mt-1">Copyrights 2008-23.  All Rights Reserved &nbsp;</p>
+                    <ul class="list-unstyled d-flex d_ft">
+                        <li><a href="#" class="text-body-secondary">Privacy </a><span>| &nbsp;</span> </li>
+                        <li><a href="#" class="text-body-secondary">Terms </a><span>| &nbsp;</span></li>
+                        <li><a href="#" class="text-body-secondary">infringement</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <!-- Main Footer Section End -->
+            </footer>
+            <!-- Large screen footer section end -->
+        </div>    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    </body>
+</html>

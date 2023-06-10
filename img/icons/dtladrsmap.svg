@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#414e5a}
+        </style>
+    </defs>
+    <g id="map" transform="translate(-34 -1358)">
+        <path id="Rectangle_6414" d="M0 0h23v23H0z" class="cls-1" data-name="Rectangle 6414" transform="translate(34 1358)"/>
+        <path id="dtladdressicn" d="M342.055 704.963h-.017a.252.252 0 0 1-.05-.008l-5.27-1.3-5.27 1.3a.265.265 0 0 1-.06.007.25.25 0 0 1-.25-.252v-13.174a.253.253 0 0 1 .192-.245l5.331-1.312a.253.253 0 0 1 .091 0h.029l5.274 1.3 5.274-1.3a.255.255 0 0 1 .214.046.251.251 0 0 1 .1.2V703.4a.251.251 0 0 1-.191.245l-5.326 1.311a.252.252 0 0 1-.052.009zm-5.084-2.26l4.167 1.262V691.96l-4-1zm5.333 1.234l4.334-.729v-12.165l-4.334 1.365zM332.14 691.96v11.931l3.832-1.19v-11.658z" class="cls-2" transform="translate(-294.138 672.027)"/>
+    </g>
+</svg>

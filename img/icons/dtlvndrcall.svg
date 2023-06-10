@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2{stroke:#414e5a}
+        </style>
+    </defs>
+    <g id="result-call" transform="translate(8.001 8)">
+        <path id="Rectangle_6416" d="M0 0h23v23H0z" class="cls-1" data-name="Rectangle 6416" transform="translate(-8.001 -8)"/>
+        <path id="result-call-2" d="M153.1 293.422a9.512 9.512 0 0 1-3.014-.5 1.035 1.035 0 0 0-.842.163l-1.331 1.325a6.761 6.761 0 0 1-3.1-2 9.107 9.107 0 0 1-2.374-3.562l1.256-1.25a.661.661 0 0 0 .163-.838 11.192 11.192 0 0 1-.414-2.911.788.788 0 0 0-.653-.85h-3.027a.793.793 0 0 0-.611.229.785.785 0 0 0-.23.609A14.2 14.2 0 0 0 153.078 298a.789.789 0 0 0 .842-.838v-2.911a.789.789 0 0 0-.741-.825z" class="cls-2" data-name="result-call" transform="translate(-142.922 -286.998)"/>
+    </g>
+</svg>

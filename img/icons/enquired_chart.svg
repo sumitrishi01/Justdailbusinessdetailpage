@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.94" height="10.817" viewBox="0 0 12.94 10.817">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #111;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="Group_168457" data-name="Group 168457" transform="translate(-282.565 -735.617)">
+    <g id="Group_168456" data-name="Group 168456" transform="translate(0 2)">
+      <path id="Union_94" data-name="Union 94" d="M8214.131-17701.906a.444.444,0,0,1,0-.627l3.333-3.338a.442.442,0,0,1,.627,0l1.911,1.912,3.147-3.152h-1.592a.442.442,0,0,1-.444-.443.444.444,0,0,1,.444-.445h2.643a.448.448,0,0,1,.339.129.445.445,0,0,1,.129.34v2.643a.446.446,0,0,1-.444.445.447.447,0,0,1-.444-.445v-1.592l-3.462,3.463a.447.447,0,0,1-.631,0l-1.906-1.906-3.022,3.018a.444.444,0,0,1-.313.129A.444.444,0,0,1,8214.131-17701.906Z" transform="translate(-7929.163 18443.063)"/>
+    </g>
+    <line id="Line_3817" data-name="Line 3817" class="cls-1" y2="9.817" transform="translate(283.065 736.117)"/>
+    <line id="Line_3818" data-name="Line 3818" class="cls-1" y2="11.435" transform="translate(294.5 745.934) rotate(90)"/>
+  </g>
+</svg>
